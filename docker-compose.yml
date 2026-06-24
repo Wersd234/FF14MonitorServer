@@ -6,6 +6,8 @@ services:
     container_name: ff14-sync-server
     ports:
       - "7714:8000"
+    volumes:
+      - /home/serveradmin/ff14MonitorServer/data:/app/data   # 【核心新增】：将容器内的 data 文件夹永久映射到服务器主机的 data 文件夹！
     restart: always
     environment:
       - TZ=Asia/Shanghai
