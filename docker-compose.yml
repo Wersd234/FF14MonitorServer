@@ -5,7 +5,7 @@ services:
     build: .
     container_name: ff14-sync-server
     ports:
-      - "141414:8000"
+      - "7714:8000"
     restart: always
     environment:
       - TZ=Asia/Shanghai
