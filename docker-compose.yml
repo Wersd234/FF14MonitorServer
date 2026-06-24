@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  ff14-sync-server:
+    build: .
+    container_name: ff14-sync-server
+    ports:
+      - "141414:8000"
+    restart: always
+    environment:
+      - TZ=Asia/Shanghai
